@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox alignment="CENTER" prefHeight="453.0" prefWidth="730.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Pane fx:id="pane1" onMouseClicked="#clickM" prefHeight="305.0" prefWidth="690.0">
+      <children>
+         <Circle id="bigCircle" fx:id="bigCircle" fill="DODGERBLUE" layoutX="492.0" layoutY="34.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+         <Label fx:id="score" layoutX="34.0" layoutY="255.0" text="Label" />
+      
+        <Label id="welcomeText" fx:id="label1" layoutX="93.0" layoutY="254.0" prefHeight="18.0" prefWidth="181.0" text="aaaaa" />
+         <Circle id="smallCircle" fx:id="smallCircle" fill="#ff604c" layoutX="599.0" layoutY="34.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+         <Line fx:id="line1" endX="-100.00003051757812" endY="224.60003662109375" layoutX="592.0" layoutY="81.0" startX="-100.00003051757812" startY="-81.0" stroke="#0000008d" />
+         <Line fx:id="Line2" endX="9.4000244140625" endY="196.60003662109375" layoutX="589.0" layoutY="109.0" startX="9.4000244140625" startY="-109.0" stroke="#0000007f" />
+      </children>
+   </Pane>
+   <ButtonBar fx:id="ButtonBar1" prefHeight="70.0" prefWidth="615.0">
+      <buttons>
+       <Button id="startGame" mnemonicParsing="false" onAction="#startgame" text="Start" />
+         <Button fx:id="pause" mnemonicParsing="false" onAction="#pause" text="Pause" />
+      </buttons>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </ButtonBar>
+</VBox>
